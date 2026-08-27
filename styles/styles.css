@@ -1,3 +1,4 @@
+@use "../utilities/variables" as *;
 @import url('https://fonts.googleapis.com/css2?family=Abel&family=Inder&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 * {
@@ -6,17 +7,10 @@
     box-sizing: border-box;
 }
 
-:root {
-    --color-primario: #2c3e50;
-    --color-secundario: #FAF9F6;
-    --color-acento: #e67e22; 
-    --title-size: clamp(1.8rem, 4vw, 3rem);
-}
-
 body {
     font-family: "Inter", sans-serif; 
-    background-color: var(--color-secundario); 
-    color: var(--color-primario); 
+    background-color: $color-secundario; 
+    color: $color-primario; 
     line-height: 1.6;
     padding: 1.5rem;
     max-width: 1000px;
@@ -24,28 +18,28 @@ body {
 }
 
 header {
-    border-bottom: 2px solid var(--color-primario);
+    border-bottom: 2px solid $color-primario;
     margin-bottom: 2.5rem;
 }
 
 h1 {
-    font-size: var(--title-size);         
+    font-size: $title-size;         
     font-weight: 700;          
-    color: var(--color-primario); 
+    color: $color-primario; 
 }
 
 h2 {
     font-size: 2rem;
     margin-top: 2rem;
     margin-bottom: 1rem;
-    color: var(--color-primario);
+    color: $color-primario;
 }
 
 h3 {
     font-size: 1.5rem;          
     font-weight: 600;           
     margin-bottom: 0.8rem;
-    color: var(--color-primario);
+    color: $color-primario;
 }
 
 p {
@@ -65,7 +59,7 @@ li {
 footer {
     margin-top: 3rem;
     padding-top: 1.5rem;
-    border-top: 1px solid var(--color-primario); 
+    border-top: 1px solid $color-primario; 
     text-align: center;
 }
 
@@ -94,5 +88,5 @@ figcaption {
 main {
     max-width: 1200px; 
     margin: 0 auto;    
-    padding: 20px;     
+    padding: 20px;    
 }
